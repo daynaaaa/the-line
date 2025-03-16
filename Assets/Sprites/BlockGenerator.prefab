@@ -9,7 +9,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 58969818227171563}
-  - component: {fileID: 8740600377733481102}
   m_Layer: 0
   m_Name: BlockGenerator
   m_TagString: Untagged
@@ -32,28 +31,8 @@ Transform:
   - {fileID: 909199500327803083}
   - {fileID: 1579795664263333662}
   m_Father: {fileID: 0}
-  m_RootOrder: -1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8740600377733481102
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4789574213875078782}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: abcded64ae2334ea39f5e7c9e264094e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  canvasWidth: 280
-  canvasHeight: 400
-  gridWidth: 5
-  gridHeight: 9
-  blockWidth: 0
-  blockHeight: 0
-  parentTransform: {fileID: 58969818227171563}
-  updateInterval: 0.5
 --- !u!1 &8329408598654909724
 GameObject:
   m_ObjectHideFlags: 0
@@ -99,8 +78,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pooledBlocks: []
+  pooledBoosters: []
   blockPrefab: {fileID: 7950317338918666644}
-  poolSize: 50
+  boosterPrefab: {fileID: 0}
+  blockPoolSize: 0
+  boosterPoolSize: 0
   parentTransform: {fileID: 58969818227171563}
 --- !u!1001 &2068257265915428093
 PrefabInstance:
